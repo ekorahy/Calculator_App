@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:calculator_app/calculator_button.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -32,7 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: const EdgeInsets.all(0.0),
             shrinkWrap: true,
             crossAxisCount: 4,
-            children: <Widget>[],
+            children: <Widget>[
+              CalculatorButton(
+                backroundColor: Theme.of(context).primaryColorLight,
+                foregroundColor: Theme.of(context).primaryColorDark,
+                text: 'C',
+              ),
+            ],
           ),
         ],
       ),
