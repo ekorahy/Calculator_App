@@ -39,6 +39,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 foregroundColor: Theme.of(context).primaryColorDark,
                 text: 'C',
               ),
+              CalculatorButton(
+                backroundColor: Theme.of(context).primaryColorLight,
+                foregroundColor: Theme.of(context).primaryColorDark,
+                text: '+/-',
+              ),
+              CalculatorButton(
+                backroundColor: Theme.of(context).primaryColorLight,
+                foregroundColor: Theme.of(context).primaryColorDark,
+                text: '%',
+              ),
+              CalculatorButton.Icon(
+                backroundColor: Theme.of(context).primaryColorDark,
+                foregroundColor: Theme.of(context).primaryColorLight,
+                text: 'Backspace',
+                icon: Icons.backspace,
+              ),
             ],
           ),
         ],
